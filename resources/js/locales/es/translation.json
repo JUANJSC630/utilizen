@@ -1,0 +1,223 @@
+{
+    "nav": {
+        "tools": "Herramientas",
+        "pricing": "Precios",
+        "dashboard": "Panel"
+    },
+    "hero": {
+        "title": "Herramientas Gratis para",
+        "subtitle": "Desarrolladores Web",
+        "description": "Genera componentes React, valida código, analiza rendimiento. Herramientas profesionales, completamente gratis.",
+        "cta": {
+            "primary": "Probar React Generator",
+            "secondary": "Ver Todas las Herramientas"
+        },
+        "badges": {
+            "developers": "Desarrolladores",
+            "free": "100% Gratis",
+            "noLogin": "Sin Registro"
+        }
+    },
+    "valueProposition": {
+        "title": "Por qué desarrolladores nos eligen",
+        "subtitle": "Herramientas profesionales sin compromisos",
+        "features": {
+            "free": {
+                "title": "100% Gratis",
+                "description": "Todas las herramientas básicas, para siempre"
+            },
+            "noLogin": {
+                "title": "Sin Login",
+                "description": "Privacidad primero, sin cuentas necesarias"
+            },
+            "instant": {
+                "title": "Resultados Instantáneos",
+                "description": "Genera código en menos de 1 segundo"
+            },
+            "quality": {
+                "title": "Código de Calidad",
+                "description": "Best practices y estándares 2024"
+            }
+        }
+    },
+    "socialProof": {
+        "title": "Desarrolladores confían en nosotros",
+        "subtitle": "Miles de developers usando nuestras herramientas diariamente",
+        "testimonials": {
+            "carlos": {
+                "name": "Carlos M.",
+                "role": "Senior React Developer",
+                "company": "TechCorp",
+                "text": "Increíble. Genero componentes en segundos y el código es production-ready."
+            },
+            "ana": {
+                "name": "Ana R.",
+                "role": "Frontend Lead",
+                "company": "StartupXYZ",
+                "text": "La mejor herramienta gratuita que he usado. Me ahorra horas cada semana."
+            },
+            "luis": {
+                "name": "Luis P.",
+                "role": "Full Stack Dev",
+                "company": "Freelance",
+                "text": "El validador de props me salvó de varios bugs. 100% recomendado."
+            }
+        },
+        "stats": {
+            "developers": "Desarrolladores Activos",
+            "components": "Componentes Generados",
+            "satisfaction": "Satisfacción"
+        }
+    },
+    "allTools": {
+        "title": "Explora Todas las Herramientas",
+        "subtitle": "herramientas gratis y contando",
+        "cta": "Ver Todas las {{count}} Herramientas"
+    },
+    "premium": {
+        "title": "¿Necesitas Más Potencia?",
+        "subtitle": "Desbloquea Funciones Premium",
+        "features": {
+            "typescript": "Exportar TypeScript",
+            "api": "Acceso API",
+            "tests": "Generar Tests",
+            "support": "Soporte Prioritario",
+            "noAds": "Sin Anuncios",
+            "noLimits": "Sin Límites"
+        },
+        "pricing": "Desde $9.99/mes | 14 días gratis",
+        "cta": {
+            "primary": "Ver Funciones Premium",
+            "secondary": "Comparar Planes"
+        },
+        "note": "💡 Tier gratuito permanece gratis para siempre"
+    },
+    "finalCta": {
+        "title": "Listo para Empezar?",
+        "subtitle": "Prueba cualquier herramienta ahora mismo - sin registro",
+        "button": "Explorar Herramientas Gratis"
+    },
+    "tools": {
+        "title": "Herramientas para Desarrolladores",
+        "description": "Herramientas online profesionales para React y desarrollo web. Todas las herramientas funcionan 100% en tu navegador sin enviar datos a nuestros servidores.",
+        "cta": {
+            "title": "¿Necesitas Funciones Premium?",
+            "description": "Obtén acceso a generación TypeScript, tests automatizados, acceso API, y más.",
+            "button": "Ver Precios"
+        }
+    },
+    "pricing": {
+        "badge": "Precios Simples y Transparentes",
+        "title": "Elige Tu",
+        "titleHighlight": "Plan Perfecto",
+        "description": "Comienza gratis y actualiza en cualquier momento. Todos los planes incluyen 14 días de prueba gratuita.",
+        "mostPopular": "Más Popular",
+        "plans": {
+            "free": {
+                "name": "Gratis",
+                "description": "Perfecto para probar nuestras herramientas",
+                "cta": "Comenzar",
+                "features": {
+                    "basic": "Todas las herramientas básicas",
+                    "generation": "Generación de componentes",
+                    "validation": "Validación de props",
+                    "analysis": "Análisis de rendimiento",
+                    "conversion": "Conversión JSX a HTML",
+                    "support": "Soporte comunitario"
+                },
+                "limitations": {
+                    "typescript": "Sin soporte TypeScript",
+                    "tests": "Sin generación de tests",
+                    "api": "Sin acceso API"
+                }
+            },
+            "premium": {
+                "name": "Premium",
+                "price": "$9",
+                "period": "/mes",
+                "description": "Para desarrolladores profesionales",
+                "cta": "Comenzar Prueba Gratis",
+                "features": {
+                    "everything": "Todo en Gratis",
+                    "typescript": "Soporte completo TypeScript",
+                    "tests": "Generación automática de tests",
+                    "api": "Acceso REST API",
+                    "support": "Soporte prioritario por email",
+                    "customization": "Personalización avanzada",
+                    "unlimited": "Uso ilimitado"
+                }
+            },
+            "team": {
+                "name": "Equipo",
+                "price": "$29",
+                "period": "/mes",
+                "description": "Para equipos y organizaciones",
+                "cta": "Contactar Ventas",
+                "features": {
+                    "everything": "Todo en Premium",
+                    "members": "Hasta 10 miembros del equipo",
+                    "workspaces": "Espacios de trabajo compartidos",
+                    "analytics": "Analíticas del equipo",
+                    "integrations": "Integraciones personalizadas",
+                    "support": "Soporte dedicado",
+                    "sso": "SSO (próximamente)"
+                }
+            }
+        },
+        "faq": {
+            "title": "Preguntas Frecuentes",
+            "questions": {
+                "trial": {
+                    "question": "¿Puedo probar las funciones Premium gratis?",
+                    "answer": "¡Sí! Todos los planes de pago incluyen 14 días de prueba gratuita. No se requiere tarjeta de crédito."
+                },
+                "change": {
+                    "question": "¿Puedo cambiar de plan más tarde?",
+                    "answer": "Absolutamente. Puedes actualizar, degradar o cancelar tu plan en cualquier momento desde tu panel."
+                },
+                "payment": {
+                    "question": "¿Qué métodos de pago aceptan?",
+                    "answer": "Aceptamos todas las principales tarjetas de crédito y débito a través de Stripe."
+                },
+                "refund": {
+                    "question": "¿Ofrecen reembolsos?",
+                    "answer": "Sí, ofrecemos una garantía de devolución de dinero de 30 días. Si no estás satisfecho, contáctanos para un reembolso completo."
+                }
+            }
+        }
+    },
+    "footer": {
+        "sections": {
+            "tools": {
+                "title": "Herramientas",
+                "links": {
+                    "componentGenerator": "Generador de Componentes",
+                    "propsValidator": "Validador de Props",
+                    "performanceAnalyzer": "Analizador de Rendimiento"
+                }
+            },
+            "resources": {
+                "title": "Recursos",
+                "links": {
+                    "blog": "Blog",
+                    "documentation": "Documentación"
+                }
+            },
+            "company": {
+                "title": "Empresa",
+                "links": {
+                    "about": "Acerca de",
+                    "pricing": "Precios"
+                }
+            },
+            "legal": {
+                "title": "Legal",
+                "links": {
+                    "privacy": "Privacidad",
+                    "terms": "Términos"
+                }
+            }
+        },
+        "copyright": "© {{year}} UtiliZen. Todos los derechos reservados."
+    }
+}

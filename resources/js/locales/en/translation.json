@@ -1,0 +1,223 @@
+{
+    "nav": {
+        "tools": "Tools",
+        "pricing": "Pricing",
+        "dashboard": "Dashboard"
+    },
+    "hero": {
+        "title": "Free Developer Tools",
+        "subtitle": "for Modern Web",
+        "description": "Generate React components, validate code, analyze performance. Professional tools, completely free.",
+        "cta": {
+            "primary": "Try React Generator",
+            "secondary": "Browse All Tools"
+        },
+        "badges": {
+            "developers": "Developers",
+            "free": "100% Free",
+            "noLogin": "No Login Required"
+        }
+    },
+    "valueProposition": {
+        "title": "Why developers choose us",
+        "subtitle": "Professional tools without compromises",
+        "features": {
+            "free": {
+                "title": "100% Free",
+                "description": "All basic tools, forever"
+            },
+            "noLogin": {
+                "title": "No Login",
+                "description": "Privacy first, no accounts needed"
+            },
+            "instant": {
+                "title": "Instant Results",
+                "description": "Generate code in less than 1 second"
+            },
+            "quality": {
+                "title": "Quality Code",
+                "description": "Best practices and 2024 standards"
+            }
+        }
+    },
+    "socialProof": {
+        "title": "Developers trust us",
+        "subtitle": "Thousands of developers using our tools daily",
+        "testimonials": {
+            "carlos": {
+                "name": "Carlos M.",
+                "role": "Senior React Developer",
+                "company": "TechCorp",
+                "text": "Amazing. I generate components in seconds and the code is production-ready."
+            },
+            "ana": {
+                "name": "Ana R.",
+                "role": "Frontend Lead",
+                "company": "StartupXYZ",
+                "text": "The best free tool I've used. Saves me hours every week."
+            },
+            "luis": {
+                "name": "Luis P.",
+                "role": "Full Stack Dev",
+                "company": "Freelance",
+                "text": "The props validator saved me from several bugs. 100% recommended."
+            }
+        },
+        "stats": {
+            "developers": "Active Developers",
+            "components": "Components Generated",
+            "satisfaction": "Satisfaction"
+        }
+    },
+    "allTools": {
+        "title": "Explore All Tools",
+        "subtitle": "free tools and counting",
+        "cta": "View All {{count}} Tools"
+    },
+    "premium": {
+        "title": "Need More Power?",
+        "subtitle": "Unlock Premium Features",
+        "features": {
+            "typescript": "Export TypeScript",
+            "api": "API Access",
+            "tests": "Generate Tests",
+            "support": "Priority Support",
+            "noAds": "No Ads",
+            "noLimits": "No Limits"
+        },
+        "pricing": "From $9.99/month | 14 days free",
+        "cta": {
+            "primary": "View Premium Features",
+            "secondary": "Compare Plans"
+        },
+        "note": "💡 Free tier remains free forever"
+    },
+    "finalCta": {
+        "title": "Ready to Get Started?",
+        "subtitle": "Try any tool right now - no registration",
+        "button": "Explore Free Tools"
+    },
+    "tools": {
+        "title": "Developer Tools",
+        "description": "Professional online tools for React and web development. All tools work 100% in your browser with no data sent to our servers.",
+        "cta": {
+            "title": "Need Premium Features?",
+            "description": "Get access to TypeScript generation, automated tests, API access, and more.",
+            "button": "View Pricing"
+        }
+    },
+    "pricing": {
+        "badge": "Simple, Transparent Pricing",
+        "title": "Choose Your",
+        "titleHighlight": "Perfect Plan",
+        "description": "Start free and upgrade anytime. All plans include a 14-day free trial.",
+        "mostPopular": "Most Popular",
+        "plans": {
+            "free": {
+                "name": "Free",
+                "description": "Perfect for trying out our tools",
+                "cta": "Get Started",
+                "features": {
+                    "basic": "All basic tools",
+                    "generation": "Component generation",
+                    "validation": "Props validation",
+                    "analysis": "Performance analysis",
+                    "conversion": "JSX to HTML conversion",
+                    "support": "Community support"
+                },
+                "limitations": {
+                    "typescript": "No TypeScript support",
+                    "tests": "No test generation",
+                    "api": "No API access"
+                }
+            },
+            "premium": {
+                "name": "Premium",
+                "price": "$9",
+                "period": "/month",
+                "description": "For professional developers",
+                "cta": "Start Free Trial",
+                "features": {
+                    "everything": "Everything in Free",
+                    "typescript": "Full TypeScript support",
+                    "tests": "Automated test generation",
+                    "api": "REST API access",
+                    "support": "Priority email support",
+                    "customization": "Advanced customization",
+                    "unlimited": "Unlimited usage"
+                }
+            },
+            "team": {
+                "name": "Team",
+                "price": "$29",
+                "period": "/month",
+                "description": "For teams and organizations",
+                "cta": "Contact Sales",
+                "features": {
+                    "everything": "Everything in Premium",
+                    "members": "Up to 10 team members",
+                    "workspaces": "Shared workspaces",
+                    "analytics": "Team analytics",
+                    "integrations": "Custom integrations",
+                    "support": "Dedicated support",
+                    "sso": "SSO (coming soon)"
+                }
+            }
+        },
+        "faq": {
+            "title": "Frequently Asked Questions",
+            "questions": {
+                "trial": {
+                    "question": "Can I try Premium features for free?",
+                    "answer": "Yes! All paid plans include a 14-day free trial. No credit card required."
+                },
+                "change": {
+                    "question": "Can I change plans later?",
+                    "answer": "Absolutely. You can upgrade, downgrade, or cancel your plan at any time from your dashboard."
+                },
+                "payment": {
+                    "question": "What payment methods do you accept?",
+                    "answer": "We accept all major credit cards and debit cards through Stripe."
+                },
+                "refund": {
+                    "question": "Do you offer refunds?",
+                    "answer": "Yes, we offer a 30-day money-back guarantee. If you're not satisfied, contact us for a full refund."
+                }
+            }
+        }
+    },
+    "footer": {
+        "sections": {
+            "tools": {
+                "title": "Tools",
+                "links": {
+                    "componentGenerator": "Component Generator",
+                    "propsValidator": "Props Validator",
+                    "performanceAnalyzer": "Performance Analyzer"
+                }
+            },
+            "resources": {
+                "title": "Resources",
+                "links": {
+                    "blog": "Blog",
+                    "documentation": "Documentation"
+                }
+            },
+            "company": {
+                "title": "Company",
+                "links": {
+                    "about": "About",
+                    "pricing": "Pricing"
+                }
+            },
+            "legal": {
+                "title": "Legal",
+                "links": {
+                    "privacy": "Privacy",
+                    "terms": "Terms"
+                }
+            }
+        },
+        "copyright": "© {{year}} UtiliZen. All rights reserved."
+    }
+}

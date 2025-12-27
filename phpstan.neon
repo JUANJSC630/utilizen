@@ -1,0 +1,20 @@
+includes:
+    - ./vendor/larastan/larastan/extension.neon
+
+parameters:
+    paths:
+        - app
+        - bootstrap
+        - config
+        - database
+        - routes
+
+    # Level 0 is the loosest and level 9 is the strictest.
+    level: 5
+
+    ignoreErrors:
+        # Ignore PHP 8.5 PDO MySQL class in config (Laravel 12 compatibility)
+        - '#Access to constant ATTR_SSL_CA on an unknown class Pdo\\Mysql#'
+
+    excludePaths:
+        - ./*/*/FileToBeExcluded.php
