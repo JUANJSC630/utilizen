@@ -11,7 +11,14 @@ sleep 5
 echo "Running migrations..."
 php artisan migrate --force
 
-# Clear and cache config
+# Clear all caches first
+echo "Clearing caches..."
+php artisan cache:clear
+php artisan config:clear
+php artisan route:clear
+php artisan view:clear
+
+# Optimize application
 echo "Optimizing application..."
 php artisan config:cache
 php artisan route:cache
