@@ -48,9 +48,6 @@ export default function LoadingScreen({
                     />
                 </svg>
             </div>
-            <p className="text-sm font-medium tracking-wide text-[#A3A3A3]">
-                Loading...
-            </p>
         </div>
     );
 }
