@@ -7,6 +7,7 @@ import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { Toaster } from 'sonner';
+import GoogleAnalytics from '@/components/analytics/google-analytics';
 import { initializeTheme } from './hooks/use-appearance';
 
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
@@ -36,6 +37,7 @@ createInertiaApp({
         root.render(
             <StrictMode>
                 <QueryClientProvider client={queryClient}>
+                    <GoogleAnalytics />
                     <App {...props} />
                     <Toaster position="top-right" />
                 </QueryClientProvider>

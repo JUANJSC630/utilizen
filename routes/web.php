@@ -1,11 +1,9 @@
 <?php
 
-use App\Http\Controllers\Web\DashboardController;
 use App\Http\Controllers\Web\HomeController;
 use App\Http\Controllers\Web\ToolController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
-use Laravel\Fortify\Features;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
@@ -15,9 +13,9 @@ Route::prefix('tools')->name('tools.')->group(function () {
     Route::get('/{slug}', [ToolController::class, 'show'])->name('show');
 });
 
-// Dashboard routes (authenticated users)
+// Dashboard redirect to new account area
 Route::middleware(['auth', 'verified'])->group(function () {
-    Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::redirect('dashboard', '/account/overview')->name('dashboard');
 });
 
 // Static pages
@@ -61,3 +59,5 @@ Route::get('/terms', function () {
 })->name('terms');
 
 require __DIR__.'/settings.php';
+require __DIR__.'/account.php';
+require __DIR__.'/admin.php';

@@ -4,14 +4,19 @@ namespace App\Http\Controllers\Web;
 
 use App\Http\Controllers\Controller;
 use App\Models\Tool;
+use App\Services\SeoService;
 use Illuminate\Support\Facades\Cache;
 use Inertia\Inertia;
 use Inertia\Response;
 
 class ToolController extends Controller
 {
+    public function __construct(private SeoService $seoService) {}
+
     public function index(): Response
     {
+        $this->seoService->setToolsIndex();
+
         $tools = Cache::remember('tools.active', 3600, function () {
             return Tool::where('is_active', true)
                 ->orderBy('usage_count', 'desc')
@@ -30,6 +35,8 @@ class ToolController extends Controller
                 ->where('is_active', true)
                 ->firstOrFail();
         });
+
+        $this->seoService->setToolPage($tool);
 
         $tool->incrementViews();
 

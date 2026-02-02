@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
+        {{-- SEO Meta Tags (Open Graph, Twitter, JSON-LD) --}}
+        {!! \Artesaos\SEOTools\Facades\SEOTools::generate() !!}
+
         {{-- Inline script to detect system dark mode preference and apply it immediately --}}
         <script>
             (function() {
@@ -30,8 +33,6 @@
                 background-color: oklch(0.145 0 0);
             }
         </style>
-
-        <title inertia>{{ config('app.name', 'Laravel') }}</title>
 
         <link rel="icon" href="/favicon.ico" sizes="any">
         <link rel="icon" href="/utilizen-icon.png" type="image/svg+xml">

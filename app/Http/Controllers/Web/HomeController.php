@@ -5,16 +5,20 @@ namespace App\Http\Controllers\Web;
 use App\Http\Controllers\Controller;
 use App\Models\Tool;
 use App\Models\ToolUsage;
+use App\Services\SeoService;
 use Illuminate\Support\Facades\Cache;
-use Illuminate\Support\Facades\DB;
 use Inertia\Inertia;
 use Inertia\Response;
 use Laravel\Fortify\Features;
 
 class HomeController extends Controller
 {
+    public function __construct(private SeoService $seoService) {}
+
     public function index(): Response
     {
+        $this->seoService->setHomePage();
+
         // Get featured tools (top 3 most used)
         $featuredTools = Cache::remember('homepage.featured_tools', 3600, function () {
             return Tool::where('is_active', true)

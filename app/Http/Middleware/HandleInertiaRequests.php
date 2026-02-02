@@ -2,6 +2,7 @@
 
 namespace App\Http\Middleware;
 
+use App\Services\SeoService;
 use Illuminate\Foundation\Inspiring;
 use Illuminate\Http\Request;
 use Inertia\Middleware;
@@ -16,6 +17,8 @@ class HandleInertiaRequests extends Middleware
      * @var string
      */
     protected $rootView = 'app';
+
+    public function __construct(private SeoService $seoService) {}
 
     /**
      * Determines the current asset version.
@@ -36,6 +39,8 @@ class HandleInertiaRequests extends Middleware
      */
     public function share(Request $request): array
     {
+        $this->seoService->setDefaults();
+
         [$message, $author] = str(Inspiring::quotes()->random())->explode('-');
 
         return [
@@ -44,8 +49,15 @@ class HandleInertiaRequests extends Middleware
             'quote' => ['message' => trim($message), 'author' => trim($author)],
             'auth' => [
                 'user' => $request->user(),
+                'isAdmin' => $request->user()?->isAdmin() ?? false,
             ],
             'sidebarOpen' => ! $request->hasCookie('sidebar_state') || $request->cookie('sidebar_state') === 'true',
+            'seo' => [
+                'title' => config('seotools.meta.defaults.title'),
+                'description' => config('seotools.meta.defaults.description'),
+                'canonical' => $request->url(),
+                'image' => config('seotools.meta.defaults.image'),
+            ],
         ];
     }
 }

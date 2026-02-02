@@ -35,4 +35,8 @@ return [
         ],
     ],
 
+    'google' => [
+        'search_console_verification' => env('GOOGLE_SEARCH_CONSOLE_VERIFICATION'),
+    ],
+
 ];

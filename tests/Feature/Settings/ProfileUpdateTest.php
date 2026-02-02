@@ -7,9 +7,19 @@ test('profile page is displayed', function () {
 
     $response = $this
         ->actingAs($user)
-        ->get(route('profile.edit'));
+        ->get(route('account.profile'));
 
     $response->assertOk();
+});
+
+test('old profile settings route redirects to account profile', function () {
+    $user = User::factory()->create();
+
+    $response = $this
+        ->actingAs($user)
+        ->get(route('profile.edit'));
+
+    $response->assertRedirect('/account/profile');
 });
 
 test('profile information can be updated', function () {
@@ -24,7 +34,7 @@ test('profile information can be updated', function () {
 
     $response
         ->assertSessionHasNoErrors()
-        ->assertRedirect(route('profile.edit'));
+        ->assertRedirect(route('account.profile'));
 
     $user->refresh();
 
@@ -45,7 +55,7 @@ test('email verification status is unchanged when the email address is unchanged
 
     $response
         ->assertSessionHasNoErrors()
-        ->assertRedirect(route('profile.edit'));
+        ->assertRedirect(route('account.profile'));
 
     expect($user->refresh()->email_verified_at)->not->toBeNull();
 });
@@ -72,14 +82,14 @@ test('correct password must be provided to delete account', function () {
 
     $response = $this
         ->actingAs($user)
-        ->from(route('profile.edit'))
+        ->from(route('account.profile'))
         ->delete(route('profile.destroy'), [
             'password' => 'wrong-password',
         ]);
 
     $response
         ->assertSessionHasErrors('password')
-        ->assertRedirect(route('profile.edit'));
+        ->assertRedirect(route('account.profile'));
 
     expect($user->fresh())->not->toBeNull();
 });

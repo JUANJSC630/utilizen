@@ -33,6 +33,6 @@ class PasswordController extends Controller
             'password' => $validated['password'],
         ]);
 
-        return back();
+        return to_route('account.security');
     }
 }

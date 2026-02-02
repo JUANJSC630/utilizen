@@ -2,7 +2,11 @@
     "nav": {
         "tools": "Herramientas",
         "pricing": "Precios",
-        "dashboard": "Panel"
+        "login": "Iniciar sesión",
+        "signUp": "Registrarse",
+        "myAccount": "Mi Cuenta",
+        "settings": "Configuración",
+        "logout": "Cerrar sesión"
     },
     "hero": {
         "title": "Herramientas Gratis para",

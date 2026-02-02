@@ -2,7 +2,11 @@
     "nav": {
         "tools": "Tools",
         "pricing": "Pricing",
-        "dashboard": "Dashboard"
+        "login": "Log in",
+        "signUp": "Sign up",
+        "myAccount": "My Account",
+        "settings": "Settings",
+        "logout": "Log out"
     },
     "hero": {
         "title": "Free Developer Tools",

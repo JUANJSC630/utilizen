@@ -2,8 +2,9 @@
 
 namespace App\Models;
 
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Fortify\TwoFactorAuthenticatable;
@@ -22,6 +23,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'role',
         'is_premium',
         'premium_expires_at',
         'api_calls_count',
@@ -56,6 +58,16 @@ class User extends Authenticatable
         ];
     }
 
+    public function isAdmin(): bool
+    {
+        return $this->role === 'admin';
+    }
+
+    public function isUser(): bool
+    {
+        return $this->role === 'user';
+    }
+
     public function isPremium(): bool
     {
         if (! $this->is_premium) {
@@ -72,13 +84,28 @@ class User extends Authenticatable
         return $premiumExpiresAt->isFuture();
     }
 
-    public function toolUsages()
+    /**
+     * @return HasMany<ToolUsage, $this>
+     */
+    public function toolUsages(): HasMany
     {
         return $this->hasMany(ToolUsage::class);
     }
 
-    public function subscriptions()
+    /**
+     * @return HasMany<Subscription, $this>
+     */
+    public function subscriptions(): HasMany
     {
         return $this->hasMany(Subscription::class);
+    }
+
+    /**
+     * @return BelongsToMany<Tool, $this>
+     */
+    public function favorites(): BelongsToMany
+    {
+        return $this->belongsToMany(Tool::class, 'user_favorites')
+            ->withTimestamps();
     }
 }
