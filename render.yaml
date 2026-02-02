@@ -1,0 +1,44 @@
+databases:
+  - name: utilizen-db
+    databaseName: utilizen
+    user: utilizen
+    plan: free
+    region: oregon
+
+services:
+  - type: web
+    name: utilizen
+    runtime: docker
+    region: oregon
+    plan: free
+    healthCheckPath: /up
+    envVars:
+      - key: APP_NAME
+        value: UtiliZen
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: "false"
+      - key: APP_KEY
+        generateValue: true
+      - key: APP_URL
+        fromService:
+          type: web
+          name: utilizen
+          property: host
+      - key: LOG_CHANNEL
+        value: stderr
+      - key: LOG_LEVEL
+        value: error
+      - key: DB_CONNECTION
+        value: pgsql
+      - key: DATABASE_URL
+        fromDatabase:
+          name: utilizen-db
+          property: connectionString
+      - key: SESSION_DRIVER
+        value: cookie
+      - key: CACHE_STORE
+        value: file
+      - key: QUEUE_CONNECTION
+        value: sync
